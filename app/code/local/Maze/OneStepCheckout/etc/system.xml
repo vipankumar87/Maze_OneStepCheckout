@@ -1,0 +1,21 @@
+<config>
+    <sections>
+        <checkout>
+            <groups>
+                <options>
+                    <fields>
+                        <maze_onestep_enabled translate="label">
+                            <label>Enable Mage OneStepCheckout</label>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <sort_order>323</sort_order>
+                            <fontend_type>select</fontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </maze_onestep_enabled>
+                    </fields>
+                </options>
+            </groups>
+        </checkout>
+    </sections>
+</config>

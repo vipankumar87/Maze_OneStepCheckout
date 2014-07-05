@@ -1,0 +1,49 @@
+<config>
+    <modules>
+        <Maze_OneStepCheckout>
+            <version>1.1</version>
+        </Maze_OneStepCheckout>
+    </modules>
+    <global>
+        <blocks>
+            <maze_onestep>
+                <class>Maze_OneStepCheckout_Block</class>
+            </maze_onestep>
+        </blocks>
+        <models>
+            <maze_onestep>
+                <class>Maze_OneStepCheckout_Model</class>
+            </maze_onestep>
+        </models>
+        <helpers>
+            <maze_onestep>
+                <class>Maze_OneStepCheckout_Helper</class>
+            </maze_onestep>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <maze_onestep module="Maze_OneStepCheckout">
+                    <file>maze/onestep.xml</file>
+                </maze_onestep>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <maze_onestep module="Maze_OneStepCheckout">
+                    <file>maze/onestep.xml</file>
+                </maze_onestep>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <checkout>
+            <options>
+                <maze_onestep_enabled>0</maze_onestep_enabled>
+            </options>
+        </checkout>
+    </default>
+</config>
