@@ -46,6 +46,24 @@ class Maze_OneStepCheckout_Model_Type_Onestep extends Mage_Checkout_Model_Type_O
         $checkout           = $this->getCheckout();
         $customerSession    = $this->getCustomerSession();
         
+        /**
+         *  Commenting don't need in onestep checkout. 
+         *  The step_data property of the checkout model. 
+         *  This property is used to manage the step navigation within the OnePage checkout
+         * 
+         ***********************************************************************************
+         * 
+         *   if (is_array($checkout->getStepData())) {
+         *      foreach ($checkout->getStepData() as $step=>$data) {
+         *          if (!($step==='login' || $customerSession->isLoggedIn() && $step==='billing')) {
+         *              $checkout->setStepData($step, 'allow', false);
+         *          }
+         *      }
+         *   }
+         ************************************************************************************
+         *
+         */
+                
         if($this->getQuote()->getIsMultiShipping())
         {
             $this->getQuote()->setIsMultiShipping(false);
